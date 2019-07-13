@@ -1,3 +1,8 @@
+html,
+body {
+  height: 100%;
+}
+
 .bg {
     background-image: url("../images/interlaced.png");
     background-size: 400px 400px;
@@ -8,3 +13,46 @@
     max-width: 200px;
     max-height: 175px;
 }
+
+#sticky-footer {
+    flex-shrink: none;
+  }
+
+  #page-content {
+    flex: 1 0 auto;
+  }
+
+  .thumbnail {
+      position:relative;
+  }
+
+  .middle-text {
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 85%;
+    width: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #4aaaa5;
+    color: white;
+    font-size: 16px;
+    padding: 16px 16px;
+  }
+  
+  .thumbnail:hover .img-responsive {
+    opacity: 1;
+  }
+  
+  .thumbnail:hover .middle-text {
+    opacity: 0;
+  }
+  
+  /* .text-block {
+    background-color: #4aaaa5;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  } */
