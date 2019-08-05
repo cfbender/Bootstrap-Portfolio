@@ -41,6 +41,10 @@ body {
     font-size: 16px;
     padding: 16px 16px;
   }
+
+  .thumb {
+    max-width: 300px;
+  }
   
   .thumbnail:hover .img-responsive {
     opacity: 1;
